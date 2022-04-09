@@ -1,0 +1,10 @@
+prefix=/usr
+libdir=${prefix}/lib/aarch64-linux-gnu
+includedir=${prefix}/include
+
+Name: libcamera
+Description: Complex Camera Support Library
+Version: 0.0.0
+Requires: libcamera-base
+Libs: -L${libdir} -lcamera
+Cflags: -I${includedir}/libcamera
